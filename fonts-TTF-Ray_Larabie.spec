@@ -17,8 +17,6 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		ttffontsdir	%{_fontsdir}/TTF
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 Free TTF fonts created by Ray Larabie.
