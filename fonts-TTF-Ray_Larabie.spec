@@ -1,5 +1,5 @@
-Summary:	Free TTF fonts created by Ray Larabie
-Summary(pl):	Darmowe czcionki TTF napisane przez Raya Larabie
+Summary:	Free True Type fonts created by Ray Larabie
+Summary(pl):	Darmowe fonty True Type napisane przez Raya Larabie
 Name:		fonts-TTF-Ray_Larabie
 Version:	20030620
 Release:	0.1
@@ -16,55 +16,52 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		ttffontsdir	%{_fontsdir}/TTF
 
 %description
-Free TTF fonts created by Ray Larabie.
+Free True Type fonts created by Ray Larabie.
 
 %description -l pl
-Darmowe czcionki TTF napisane przez Raya Larabie.
+Darmowe fonty True Type napisane przez Raya Larabie.
 
 %package -n %{name}-pl
-Summary:	Free TTF fonts created by Ray Larabie
-Summary(pl):	Darmowe czcionki TTF napisane przez Raya Larabie
+Summary:	Free True Type fonts created by Ray Larabie
+Summary(pl):	Darmowe fonty True Type napisane przez Raya Larabie
 Group:		X11/Fonts
-Requires(post,postun):	fontpostinst
 Requires(post,postun):	fontpostinst
 
 %description -n %{name}-pl
-A collection of free TrueType fonts. This package contains fonts with
+A collection of free True Type fonts. This package contains fonts with
 iso8859-2 encoding.
 
 %description -n %{name}-pl -l pl
-Kolekcja darmowych czcionek TTF. W pakiecie tym znajduj± siê czcionki
+Kolekcja darmowych fontów True Type. W pakiecie tym znajduj± siê fonty
 zawieraj±ce kodowanie iso8859-2
 
 %package -n %{name}-plbad
-Summary:	Free TTF fonts created by Ray Larabie
-Summary(pl):	Darmowe czcionki TTF napisane przez Raya Larabie
+Summary:	Free True Type fonts created by Ray Larabie
+Summary(pl):	Darmowe fonty True Type napisane przez Raya Larabie
 Group:		X11/Fonts
-Requires(post,postun):	fontpostinst
 Requires(post,postun):	fontpostinst
 
 %description -n %{name}-plbad
-A collection of free TrueType fonts. This package contains fonts with
+A collection of free True Type fonts. This package contains fonts with
 iso8859-2 encoding, but Polish diacritical characters are not
 displayed.
 
 %description -n %{name}-plbad -l pl
-Kolekcja darmowych czcionek TTF. W pakiecie tym znajduj± siê czcionki
-zawieraj±ce kodowanie iso8859-2 ale polskie znaki nie s± wy¶wietlane.
+Kolekcja darmowych fontów True Type. W pakiecie tym znajduj± siê fonty
+zawieraj±ce kodowanie iso8859-2, ale polskie znaki nie s± wy¶wietlane.
 
 %package -n %{name}-other
-Summary:	Free TTF fonts created by Ray Larabie
-Summary(pl):	Darmowe czcionki TTF napisane przez Raya Larabie
+Summary:	Free True Type fonts created by Ray Larabie
+Summary(pl):	Darmowe fonty True Type napisane przez Raya Larabie
 Group:		X11/Fonts
-Requires(post,postun):	fontpostinst
 Requires(post,postun):	fontpostinst
 
 %description -n %{name}-other
-A collection of free TrueType fonts. This package contains fonts with
+A collection of free True Type fonts. This package contains fonts with
 enconding other than iso8859-2.
 
 %description -n %{name}-other -l pl
-Kolekcja darmowych czcionek TTF. W pakiecie tym znajduj± siê czcionki
+Kolekcja darmowych fontów True Type. W pakiecie tym znajduj± siê fonty
 nie zawieraj±ce kodowania iso8859-2.
 
 %prep
@@ -235,7 +232,7 @@ fontpostinst TTF
 
 %files -n %{name}-other
 %defattr(644,root,root,755)
-%doc READ_ME.TXT BETSY.TXT COUNTERS.TXT 
+%doc READ_ME.TXT BETSY.TXT COUNTERS.TXT
 %{ttffontsdir}/1980PORT.TTF
 %{ttffontsdir}/256BYTES.TTF
 %{ttffontsdir}/6809CHAR.TTF
