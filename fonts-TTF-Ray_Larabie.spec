@@ -885,7 +885,7 @@ fi
 %{ttffontsdir}/BUDMO.TTF
 %{ttffontsdir}/BURNSTOW.TTF
 %{ttffontsdir}/CHICKENW.TTF
-#%{ttffontsdir}/CHR$(32).TTF
+#%%{ttffontsdir}/CHR$(32).TTF
 %{ttffontsdir}/COMMLITY.TTF
 %{ttffontsdir}/COUNTERS.TTF
 %{ttffontsdir}/CRACKMAN.TTF
@@ -925,7 +925,7 @@ fi
 %{ttffontsdir}/FADGOD.TTF
 %{ttffontsdir}/FAKERECE.TTF
 %{ttffontsdir}/FIELDDAY.TTF
-#%{ttffontsdir}/$FIVEDOU.TTF
+#%%{ttffontsdir}/$FIVEDOU.TTF
 %{ttffontsdir}/FLUORIDE.TTF
 %{ttffontsdir}/FORGOTBI.TTF
 %{ttffontsdir}/FORGOTTB.TTF
@@ -984,7 +984,7 @@ fi
 %{ttffontsdir}/KUSTOMKA.TTF
 %{ttffontsdir}/LARABIEB.TTF
 %{ttffontsdir}/LARABIEF.TTF
-#%{ttffontsdir}/LET'SEAT.TTF
+#%%{ttffontsdir}/LET'SEAT.TTF
 %{ttffontsdir}/LETTERA.TTF
 %{ttffontsdir}/LETTERB.TTF
 %{ttffontsdir}/LETTERC.TTF
