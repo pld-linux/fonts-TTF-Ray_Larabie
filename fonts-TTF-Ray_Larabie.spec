@@ -2,8 +2,8 @@ Summary:	Free TTF fonts created by Ray Larabie
 Summary(pl):	Darmowe czcionki TTF napisane przez Raya Larabie
 Name:		fonts-TTF-Ray_Larabie
 Version:	20020528
-Release:	1
-License:	freeware
+Release:	2
+License:	Freeware
 Group:		X11/Fonts
 Source0:	http://fonts.theinstallation.org/allfonts.zip
 URL:		http://www.larabiefonts.com/
