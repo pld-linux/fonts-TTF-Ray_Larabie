@@ -17,7 +17,6 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		ttffontsdir	%{_fontsdir}/TTF
 
-
 %description
 Free TTF fonts created by Ray Larabie.
 
@@ -29,7 +28,7 @@ Summary:	Free TTF fonts created by Ray Larabie
 Summary(pl):	Darmowe czcionki TTF napisane przez Raya Larabie
 Group:		X11/Fonts
 Requires(post,postun):	fileutils
-Requires(post,postun):	sed
+Requires(post,postun):	textutils
 
 %description -n %{name}-pl
 A collection of free TrueType fonts. This package contains fonts with
@@ -44,7 +43,7 @@ Summary:	Free TTF fonts created by Ray Larabie
 Summary(pl):	Darmowe czcionki TTF napisane przez Raya Larabie
 Group:		X11/Fonts
 Requires(post,postun):	fileutils
-Requires(post,postun):	sed
+Requires(post,postun):	textutils
 
 %description -n %{name}-plbad
 A collection of free TrueType fonts. This package contains fonts with
@@ -60,7 +59,7 @@ Summary:	Free TTF fonts created by Ray Larabie
 Summary(pl):	Darmowe czcionki TTF napisane przez Raya Larabie
 Group:		X11/Fonts
 Requires(post,postun):	fileutils
-Requires(post,postun):	sed
+Requires(post,postun):	textutils
 
 %description -n %{name}-other
 A collection of free TrueType fonts. This package contains fonts with
@@ -594,7 +593,7 @@ cd %{ttffontsdir}
 umask 022
 rm -f fonts.scale.bak
 cat fonts.scale.* | sort -u > fonts.scale.tmp
-cat fonts.scale.tmp | wc -l | sed -e 's/ //g' > fonts.scale
+cat fonts.scale.tmp | wc -l | tr -d ' ' > fonts.scale
 cat fonts.scale.tmp >> fonts.scale
 rm -f fonts.scale.tmp fonts.dir
 ln -sf fonts.scale fonts.dir
@@ -607,7 +606,7 @@ cd %{ttffontsdir}
 umask 022
 rm -f fonts.scale.bak
 cat fonts.scale.* 2>/dev/null | sort -u > fonts.scale.tmp
-cat fonts.scale.tmp | wc -l | sed -e 's/ //g' > fonts.scale
+cat fonts.scale.tmp | wc -l | tr -d ' ' > fonts.scale
 cat fonts.scale.tmp >> fonts.scale
 rm -f fonts.scale.tmp fonts.dir
 ln -sf fonts.scale fonts.dir
@@ -620,7 +619,7 @@ cd %{ttffontsdir}
 umask 022
 rm -f fonts.scale.bak
 cat fonts.scale.* | sort -u > fonts.scale.tmp
-cat fonts.scale.tmp | wc -l | sed -e 's/ //g' > fonts.scale
+cat fonts.scale.tmp | wc -l | tr -d ' ' > fonts.scale
 cat fonts.scale.tmp >> fonts.scale
 rm -f fonts.scale.tmp fonts.dir
 ln -sf fonts.scale fonts.dir
@@ -633,7 +632,7 @@ cd %{ttffontsdir}
 umask 022
 rm -f fonts.scale.bak
 cat fonts.scale.* 2>/dev/null | sort -u > fonts.scale.tmp
-cat fonts.scale.tmp | wc -l | sed -e 's/ //g' > fonts.scale
+cat fonts.scale.tmp | wc -l | tr -d ' ' > fonts.scale
 cat fonts.scale.tmp >> fonts.scale
 rm -f fonts.scale.tmp fonts.dir
 ln -sf fonts.scale fonts.dir
@@ -646,7 +645,7 @@ cd %{ttffontsdir}
 umask 022
 rm -f fonts.scale.bak
 cat fonts.scale.* | sort -u > fonts.scale.tmp
-cat fonts.scale.tmp | wc -l | sed -e 's/ //g' > fonts.scale
+cat fonts.scale.tmp | wc -l | tr -d ' ' > fonts.scale
 cat fonts.scale.tmp >> fonts.scale
 rm -f fonts.scale.tmp fonts.dir
 ln -sf fonts.scale fonts.dir
@@ -659,7 +658,7 @@ cd %{ttffontsdir}
 umask 022
 rm -f fonts.scale.bak
 cat fonts.scale.* 2>/dev/null | sort -u > fonts.scale.tmp
-cat fonts.scale.tmp | wc -l | sed -e 's/ //g' > fonts.scale
+cat fonts.scale.tmp | wc -l | tr -d ' ' > fonts.scale
 cat fonts.scale.tmp >> fonts.scale
 rm -f fonts.scale.tmp fonts.dir
 ln -sf fonts.scale fonts.dir
