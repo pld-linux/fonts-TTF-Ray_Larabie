@@ -2,7 +2,7 @@ Summary:	Free True Type fonts created by Ray Larabie
 Summary(pl):	Darmowe fonty True Type napisane przez Raya Larabie
 Name:		fonts-TTF-Ray_Larabie
 Version:	20030620
-Release:	0.1
+Release:	0.2
 License:	Freeware
 Group:		Fonts
 Source0:	http://www.larabiefonts.com/pig/allfonts.zip
@@ -10,6 +10,7 @@ Source0:	http://www.larabiefonts.com/pig/allfonts.zip
 URL:		http://www.larabiefonts.com/
 #NoSource:	0
 BuildRequires:	unzip
+Requires:	fontpostinst
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
