@@ -70,10 +70,10 @@ unzip %{SOURCE0}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/%{ttffontsdir}
+install -d $RPM_BUILD_ROOT%{ttffontsdir}
 
-install *.TTF $RPM_BUILD_ROOT/%{ttffontsdir}
-install *.ttf $RPM_BUILD_ROOT/%{ttffontsdir}
+install *.TTF $RPM_BUILD_ROOT%{ttffontsdir}
+install *.ttf $RPM_BUILD_ROOT%{ttffontsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
