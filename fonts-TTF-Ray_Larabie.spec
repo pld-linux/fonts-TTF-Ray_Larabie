@@ -4,7 +4,7 @@ Name:		fonts-TTF-Ray_Larabie
 Version:	20030620
 Release:	0.1
 License:	Freeware
-Group:		X11/Fonts
+Group:		Fonts
 Source0:	http://www.larabiefonts.com/pig/allfonts.zip
 # Source0-md5:	491a0e85c79e71b1d96a99a22e1fc1f9
 URL:		http://www.larabiefonts.com/
@@ -24,7 +24,7 @@ Darmowe fonty True Type napisane przez Raya Larabie.
 %package -n %{name}-pl
 Summary:	Free True Type fonts created by Ray Larabie
 Summary(pl):	Darmowe fonty True Type napisane przez Raya Larabie
-Group:		X11/Fonts
+Group:		Fonts
 Requires(post,postun):	fontpostinst
 
 %description -n %{name}-pl
@@ -38,7 +38,7 @@ zawieraj±ce kodowanie iso8859-2
 %package -n %{name}-plbad
 Summary:	Free True Type fonts created by Ray Larabie
 Summary(pl):	Darmowe fonty True Type napisane przez Raya Larabie
-Group:		X11/Fonts
+Group:		Fonts
 Requires(post,postun):	fontpostinst
 
 %description -n %{name}-plbad
@@ -53,7 +53,7 @@ zawieraj±ce kodowanie iso8859-2, ale polskie znaki nie s± wy¶wietlane.
 %package -n %{name}-other
 Summary:	Free True Type fonts created by Ray Larabie
 Summary(pl):	Darmowe fonty True Type napisane przez Raya Larabie
-Group:		X11/Fonts
+Group:		Fonts
 Requires(post,postun):	fontpostinst
 
 %description -n %{name}-other
