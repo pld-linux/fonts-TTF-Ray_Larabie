@@ -10,7 +10,6 @@ Source0:	http://www.larabiefonts.com/pig/allfonts.zip
 URL:		http://www.larabiefonts.com/
 #NoSource:	0
 BuildRequires:	unzip
-Requires:	fontpostinst
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -22,46 +21,46 @@ Free True Type fonts created by Ray Larabie.
 %description -l pl
 Darmowe fonty True Type napisane przez Raya Larabie.
 
-%package -n %{name}-pl
+%package pl
 Summary:	Free True Type fonts created by Ray Larabie
 Summary(pl):	Darmowe fonty True Type napisane przez Raya Larabie
 Group:		Fonts
 Requires(post,postun):	fontpostinst
 
-%description -n %{name}-pl
+%description pl
 A collection of free True Type fonts. This package contains fonts with
 iso8859-2 encoding.
 
-%description -n %{name}-pl -l pl
+%description pl -l pl
 Kolekcja darmowych fontów True Type. W pakiecie tym znajduj± siê fonty
 zawieraj±ce kodowanie iso8859-2
 
-%package -n %{name}-plbad
+%package plbad
 Summary:	Free True Type fonts created by Ray Larabie
 Summary(pl):	Darmowe fonty True Type napisane przez Raya Larabie
 Group:		Fonts
 Requires(post,postun):	fontpostinst
 
-%description -n %{name}-plbad
+%description plbad
 A collection of free True Type fonts. This package contains fonts with
 iso8859-2 encoding, but Polish diacritical characters are not
 displayed.
 
-%description -n %{name}-plbad -l pl
+%description plbad -l pl
 Kolekcja darmowych fontów True Type. W pakiecie tym znajduj± siê fonty
 zawieraj±ce kodowanie iso8859-2, ale polskie znaki nie s± wy¶wietlane.
 
-%package -n %{name}-other
+%package other
 Summary:	Free True Type fonts created by Ray Larabie
 Summary(pl):	Darmowe fonty True Type napisane przez Raya Larabie
 Group:		Fonts
 Requires(post,postun):	fontpostinst
 
-%description -n %{name}-other
+%description other
 A collection of free True Type fonts. This package contains fonts with
 enconding other than iso8859-2.
 
-%description -n %{name}-other -l pl
+%description other -l pl
 Kolekcja darmowych fontów True Type. W pakiecie tym znajduj± siê fonty
 nie zawieraj±ce kodowania iso8859-2.
 
@@ -79,25 +78,25 @@ install *.ttf $RPM_BUILD_ROOT%{ttffontsdir}
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post -n %{name}-pl
+%post	pl
 fontpostinst TTF
 
-%postun -n %{name}-pl
+%postun	pl
 fontpostinst TTF
 
-%post -n %{name}-plbad
+%post	plbad
 fontpostinst TTF
 
-%postun -n %{name}-plbad
+%postun	plbad
 fontpostinst TTF
 
-%post -n %{name}-other
+%post	other
 fontpostinst TTF
 
-%postun -n %{name}-other
+%postun	other
 fontpostinst TTF
 
-%files -n %{name}-pl
+%files pl
 %defattr(644,root,root,755)
 %doc READ_ME.TXT TEEN.TXT
 %{ttffontsdir}/ASTRONBI.TTF
@@ -162,7 +161,7 @@ fontpostinst TTF
 %{ttffontsdir}/ZEKTONIT.TTF
 %{ttffontsdir}/ZEKTON__.TTF
 
-%files -n %{name}-plbad
+%files plbad
 %defattr(644,root,root,755)
 %doc READ_ME.TXT
 %{ttffontsdir}/ALMONTE.TTF
@@ -231,7 +230,7 @@ fontpostinst TTF
 %{ttffontsdir}/ZEROTWOS.TTF
 %{ttffontsdir}/ZRNIC___.TTF
 
-%files -n %{name}-other
+%files other
 %defattr(644,root,root,755)
 %doc READ_ME.TXT BETSY.TXT COUNTERS.TXT
 %{ttffontsdir}/1980PORT.TTF
