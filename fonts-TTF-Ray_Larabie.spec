@@ -6,6 +6,7 @@ Release:	2
 License:	Freeware
 Group:		X11/Fonts
 Source0:	http://fonts.theinstallation.org/allfonts.zip
+# Source0-md5:	e6fee5f0e06a5c5277e1f6bbdc4b1902
 URL:		http://www.larabiefonts.com/
 #NoSource:	0
 BuildRequires:	textutils
