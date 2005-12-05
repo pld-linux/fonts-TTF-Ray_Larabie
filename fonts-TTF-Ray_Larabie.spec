@@ -26,6 +26,7 @@ Summary:	Free True Type fonts created by Ray Larabie
 Summary(pl):	Darmowe fonty True Type napisane przez Raya Larabie
 Group:		Fonts
 Requires(post,postun):	fontpostinst
+Requires:	%{ttffontsdir}
 
 %description pl
 A collection of free True Type fonts. This package contains fonts with
@@ -40,6 +41,7 @@ Summary:	Free True Type fonts created by Ray Larabie
 Summary(pl):	Darmowe fonty True Type napisane przez Raya Larabie
 Group:		Fonts
 Requires(post,postun):	fontpostinst
+Requires:	%{ttffontsdir}
 
 %description plbad
 A collection of free True Type fonts. This package contains fonts with
@@ -55,6 +57,7 @@ Summary:	Free True Type fonts created by Ray Larabie
 Summary(pl):	Darmowe fonty True Type napisane przez Raya Larabie
 Group:		Fonts
 Requires(post,postun):	fontpostinst
+Requires:	%{ttffontsdir}
 
 %description other
 A collection of free True Type fonts. This package contains fonts with
