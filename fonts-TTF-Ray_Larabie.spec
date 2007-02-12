@@ -1,5 +1,5 @@
 Summary:	Free True Type fonts created by Ray Larabie
-Summary(pl):	Darmowe fonty True Type napisane przez Raya Larabie
+Summary(pl.UTF-8):   Darmowe fonty True Type napisane przez Raya Larabie
 Name:		fonts-TTF-Ray_Larabie
 Version:	20030620
 Release:	0.2
@@ -18,12 +18,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Free True Type fonts created by Ray Larabie.
 
-%description -l pl
+%description -l pl.UTF-8
 Darmowe fonty True Type napisane przez Raya Larabie.
 
 %package pl
 Summary:	Free True Type fonts created by Ray Larabie
-Summary(pl):	Darmowe fonty True Type napisane przez Raya Larabie
+Summary(pl.UTF-8):   Darmowe fonty True Type napisane przez Raya Larabie
 Group:		Fonts
 Requires(post,postun):	fontpostinst
 Requires:	%{ttffontsdir}
@@ -32,13 +32,13 @@ Requires:	%{ttffontsdir}
 A collection of free True Type fonts. This package contains fonts with
 iso8859-2 encoding.
 
-%description pl -l pl
-Kolekcja darmowych fontów True Type. W pakiecie tym znajduj± siê fonty
-zawieraj±ce kodowanie iso8859-2
+%description pl -l pl.UTF-8
+Kolekcja darmowych fontÃ³w True Type. W pakiecie tym znajdujÄ… siÄ™ fonty
+zawierajÄ…ce kodowanie iso8859-2
 
 %package plbad
 Summary:	Free True Type fonts created by Ray Larabie
-Summary(pl):	Darmowe fonty True Type napisane przez Raya Larabie
+Summary(pl.UTF-8):   Darmowe fonty True Type napisane przez Raya Larabie
 Group:		Fonts
 Requires(post,postun):	fontpostinst
 Requires:	%{ttffontsdir}
@@ -48,13 +48,13 @@ A collection of free True Type fonts. This package contains fonts with
 iso8859-2 encoding, but Polish diacritical characters are not
 displayed.
 
-%description plbad -l pl
-Kolekcja darmowych fontów True Type. W pakiecie tym znajduj± siê fonty
-zawieraj±ce kodowanie iso8859-2, ale polskie znaki nie s± wy¶wietlane.
+%description plbad -l pl.UTF-8
+Kolekcja darmowych fontÃ³w True Type. W pakiecie tym znajdujÄ… siÄ™ fonty
+zawierajÄ…ce kodowanie iso8859-2, ale polskie znaki nie sÄ… wyÅ›wietlane.
 
 %package other
 Summary:	Free True Type fonts created by Ray Larabie
-Summary(pl):	Darmowe fonty True Type napisane przez Raya Larabie
+Summary(pl.UTF-8):   Darmowe fonty True Type napisane przez Raya Larabie
 Group:		Fonts
 Requires(post,postun):	fontpostinst
 Requires:	%{ttffontsdir}
@@ -63,9 +63,9 @@ Requires:	%{ttffontsdir}
 A collection of free True Type fonts. This package contains fonts with
 enconding other than iso8859-2.
 
-%description other -l pl
-Kolekcja darmowych fontów True Type. W pakiecie tym znajduj± siê fonty
-nie zawieraj±ce kodowania iso8859-2.
+%description other -l pl.UTF-8
+Kolekcja darmowych fontÃ³w True Type. W pakiecie tym znajdujÄ… siÄ™ fonty
+nie zawierajÄ…ce kodowania iso8859-2.
 
 %prep
 %setup -q -c -T
