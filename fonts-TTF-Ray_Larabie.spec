@@ -1,5 +1,5 @@
 Summary:	Free TrueType fonts created by Ray Larabie
-Summary(pl.UTF-8):	Darmowe fonty TrueType napisane przez Raya Larabie
+Summary(pl.UTF-8):	Darmowe fonty TrueType stworzone przez Raya Larabie
 Name:		fonts-TTF-Ray_Larabie
 Version:	20030620
 Release:	0.2
@@ -19,11 +19,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Free TrueType fonts created by Ray Larabie.
 
 %description -l pl.UTF-8
-Darmowe fonty TrueType napisane przez Raya Larabie.
+Darmowe fonty TrueType stworzone przez Raya Larabie.
 
 %package pl
 Summary:	Free TrueType fonts created by Ray Larabie
-Summary(pl.UTF-8):	Darmowe fonty TrueType napisane przez Raya Larabie
+Summary(pl.UTF-8):	Darmowe fonty TrueType stworzone przez Raya Larabie
 Group:		Fonts
 Requires(post,postun):	fontpostinst
 Requires:	%{ttffontsdir}
@@ -38,7 +38,7 @@ zawierające kodowanie iso8859-2
 
 %package plbad
 Summary:	Free TrueType fonts created by Ray Larabie
-Summary(pl.UTF-8):	Darmowe fonty TrueType napisane przez Raya Larabie
+Summary(pl.UTF-8):	Darmowe fonty TrueType stworzone przez Raya Larabie
 Group:		Fonts
 Requires(post,postun):	fontpostinst
 Requires:	%{ttffontsdir}
@@ -54,7 +54,7 @@ zawierające kodowanie iso8859-2, ale polskie znaki nie są wyświetlane.
 
 %package other
 Summary:	Free TrueType fonts created by Ray Larabie
-Summary(pl.UTF-8):	Darmowe fonty TrueType napisane przez Raya Larabie
+Summary(pl.UTF-8):	Darmowe fonty TrueType stworzone przez Raya Larabie
 Group:		Fonts
 Requires(post,postun):	fontpostinst
 Requires:	%{ttffontsdir}
